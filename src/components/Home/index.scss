@@ -1,0 +1,13 @@
+.carousel {
+  img {
+    object-fit: cover;
+    width: auto !important;
+
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .fixed-span {
+    color: white;
+  }
+}
