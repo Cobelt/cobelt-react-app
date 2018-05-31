@@ -1,9 +1,10 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-import './index.scss';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import './materialize_variables.css';
 
 import Header from './components/Header';
 import Home from './components/Home';

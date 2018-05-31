@@ -1,5 +1,13 @@
 .carousel {
+
+  width: 100%;
+
+  .carousel-item {
+    max-height: 500px;
+  }
+
   img {
+    transform: translateY(-25%);
     object-fit: cover;
     width: auto !important;
 

@@ -1,0 +1,17 @@
+.carousel {
+
+
+  .fixed-span {
+    color: white;
+  }
+}
+
+.carousel-item {
+  img {
+    object-fit: cover;
+    width: auto !important;
+
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
