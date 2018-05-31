@@ -1,17 +1,20 @@
 .carousel {
 
+  width: 100%;
 
-  .fixed-span {
-    color: white;
+  .carousel-item {
+    max-height: 500px;
   }
-}
 
-.carousel-item {
   img {
     object-fit: cover;
     width: auto !important;
 
     min-width: 100%;
     min-height: 100%;
+  }
+
+  .fixed-span {
+    color: white;
   }
 }

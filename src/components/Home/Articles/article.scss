@@ -1,0 +1,18 @@
+.card {
+
+  margin-top: 7%;
+
+  .img-container {
+
+    height: 30rem;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: auto !important;
+
+      max-width: 100%;
+      min-height: 100%;
+    }
+  }
+}

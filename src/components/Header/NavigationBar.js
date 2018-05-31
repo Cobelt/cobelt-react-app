@@ -6,6 +6,8 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
 import NavIcon from '../Utils/NavIcon';
 import Dropdown from "../Utils/Dropdown";
 
+import './navbar.css';
+
 export default class NavigationBar extends Component {
     constructor(props) {
         super(props);
@@ -46,15 +48,15 @@ export default class NavigationBar extends Component {
 
     getNavIcons() {
         return this.state.navIcons.map(navIcon => {
-            return <NavIcon key={navIcon.route + '/' + navIcon.icon} route={ navIcon.route } icon={ navIcon.icon } />
+            return <NavIcon key={'navicon/' + navIcon.route + '/' + navIcon.icon} route={ navIcon.route } icon={ navIcon.icon } />
         });
     }
 
     getNavItems() {
         return this.state.navItems.map(navItem => {
             return (
-            <NavItem>
-                <NavLink key={navItem.route + '/' + navItem.term} route={ navItem.route }>
+            <NavItem key={'navterm/' + navItem.route + '/' + navItem.term}>
+                <NavLink route={ navItem.route }>
                     { navItem.term }
                 </NavLink>
             </NavItem>
