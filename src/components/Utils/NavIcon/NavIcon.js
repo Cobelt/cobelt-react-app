@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { NavItem } from 'reactstrap';
 
+import './NavIcon.css';
+
 class NavIcon extends Component {
     constructor (props) {
         super(props);

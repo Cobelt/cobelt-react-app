@@ -1,5 +1,21 @@
+$body-bg: azure;
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
+  background-color: $body-bg;
+}
+
+.margin-top {
+  &.percent-2 {
+    margin-top: 2%;
+  }
+}
+
+.margin-bottom {
+  &.percent-5 {
+    margin-bottom: 5%;
+  }
 }

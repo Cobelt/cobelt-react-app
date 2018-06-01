@@ -4,10 +4,10 @@ import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './materialize_variables.css';
 
 import Header from './components/Header';
 import Home from './components/Home';
+import ArticleDetails from "./components/ArticleDetails";
 
 // const API_KEY = 'AIzaSyD9ESp2R8sT20Nca8gBlwnHaYJ30gV663c';
 
@@ -17,10 +17,17 @@ class App extends Component {
             <div>
                 <Header />
                 <Home />
+                <ArticleDetails baseId={4}/>
             </div>
         );
     }
 }
+
+// <div>
+    // Header
+    // Page component from router
+    // Footer
+// </div>
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

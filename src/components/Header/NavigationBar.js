@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-import NavIcon from '../Utils/NavIcon';
-import Dropdown from "../Utils/Dropdown";
+import NavIcon from '../Utils/NavIcon/NavIcon';
+import Dropdown from "../Utils/Dropdown/Dropdown";
 
-import './navbar.css';
+import './NavigationBar.css';
 
 export default class NavigationBar extends Component {
     constructor(props) {
@@ -28,12 +28,12 @@ export default class NavigationBar extends Component {
                 { route: "/games", term: "Games" },
                 { route: "/cards", term: "Cards" },
                 { route: "/drawings", term: "Drawings" },
-                { route: "/shop", term: "Shop" },
+                { route: "/family_trees", term: 'Family Trees' },
             ],
             navDropdown: props.navDropdown || {
                 direction: 'right',
                 items: [
-                    { route: "/components", term: 'Components' },
+                    { route: "/shop", term: "Shop" },
                     { route: "https://github.com/cobelt", term: 'GitHub' },
                 ],
             }
@@ -70,7 +70,7 @@ export default class NavigationBar extends Component {
 
         return (
             <div>
-                <Navbar color="light" light expand="md">
+                <Navbar light expand="md">
                     <NavbarBrand href="/">cobelt.fr</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>

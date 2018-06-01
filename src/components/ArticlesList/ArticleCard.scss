@@ -1,0 +1,37 @@
+.card {
+
+  filter:  brightness(1);
+  transition: filter .2s;
+
+  -webkit-filter: brightness(1);
+  -webkit-transition: filter .2s;
+
+  &.article-item:hover {
+    cursor: pointer;
+
+    filter:  brightness(0.7);
+    transition: filter .2s;
+
+    -webkit-filter: brightness(0.7);
+    -webkit-transition: filter .2s;
+  }
+
+  .img-container {
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: auto !important;
+
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  p.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

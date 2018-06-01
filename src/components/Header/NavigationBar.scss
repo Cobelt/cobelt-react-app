@@ -1,0 +1,52 @@
+@font-face {
+  font-family: carefree;
+  src: local('carefree'), url(../../assets/font/carefree/carefree.woff) format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: disney;
+  src: local('disney'), url(../../assets/font/disney/Walt_Disney_Script.woff) format('woff');
+}
+
+$brand-font: disney;
+
+$navbar-bg: rgb(255, 108, 0);
+$dropdown-link-hover-bg: rgba(0, 0, 0, 0.2);
+
+.navbar {
+  background-color: $navbar-bg;
+
+  .navbar-brand {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: $brand-font, sans-serif;
+    font-size: 250%;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    margin-top: -25%;
+    margin-bottom: -25%;
+  }
+
+  .nav-item {
+
+    div.dropdown-menu {
+      background-color: $navbar-bg;
+
+      a:hover {
+        background-color: $dropdown-link-hover-bg;
+      }
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.7) !important;
+
+      &:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 1) !important;
+      }
+    }
+
+  }
+}
+
