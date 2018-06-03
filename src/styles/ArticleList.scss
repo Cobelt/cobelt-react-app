@@ -1,0 +1,44 @@
+.selected {
+  filter: grayscale(1);
+}
+div:not(.selected) {
+
+    filter: brightness(1);
+    transition: filter .2s;
+
+    &.article-item:hover {
+      cursor: pointer;
+
+      filter: brightness(0.7);
+      transition: filter .2s;
+    }
+
+    &.article-item:active {
+
+      filter: brightness(0.5);
+      transition: filter .2s;
+    }
+
+}
+
+.card {
+  .img-container {
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: auto !important;
+
+      min-width: 100%;
+      max-width: 100%;
+
+      height: 100%;
+    }
+  }
+
+  p.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

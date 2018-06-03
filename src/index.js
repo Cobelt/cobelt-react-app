@@ -1,33 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import registerServiceWorker from './registerServiceWorker';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+
+import App from './components/App';
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from './components/Header';
-import Home from './components/Home';
-import ArticleDetails from "./components/ArticleDetails";
-
 // const API_KEY = 'AIzaSyD9ESp2R8sT20Nca8gBlwnHaYJ30gV663c';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Header />
-                <Home />
-                <ArticleDetails baseId={4}/>
-            </div>
-        );
-    }
-}
+import reducers from './reducers';
 
-// <div>
-    // Header
-    // Page component from router
-    // Footer
-// </div>
+const createStoreWithMiddleware = applyMiddleware()(createStore);
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(
+    <Provider store={createStoreWithMiddleware(reducers)}>
+        <App />
+    </Provider>
+    , document.getElementById('root')
+);
