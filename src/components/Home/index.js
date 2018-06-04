@@ -4,7 +4,7 @@ import { Component } from 'react';
 import { Container, Row } from 'reactstrap';
 
 import Carousel from "./Carousel/Carousel";
-import ArticleList from "../ArticlesList/ArticleList";
+import ArticleList from "../../containers/ArticleList";
 
 import { articleList } from '../../assets/fake_DB/articles';
 import { carouselSlides } from "../../assets/fake_DB/carousel";
