@@ -5,7 +5,6 @@ import { createStore, applyMiddleware } from 'redux';
 
 import App from './components/App';
 
-import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // const API_KEY = 'AIzaSyD9ESp2R8sT20Nca8gBlwnHaYJ30gV663c';

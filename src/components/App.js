@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
 
 import Header from './Header/index';
-import ArticleList from "../containers/ArticleList";
-// import ArticleDetails from './ArticleDetails/index';
+import Router from "../containers/Router";
+// footer import
 
+import '../styles/App.css';
 
 export default class App extends Component {
     render() {
@@ -12,18 +12,7 @@ export default class App extends Component {
             <div>
                 <Header />
 
-                <Container>
-                    <Row className="margin-top percent-2">
-                        <Col sm={12} md={9}>
-                            {/*<ArticleDetails baseId={4}/>*/}
-                        </Col>
-                        <Col sm={12} md={3}>
-                            <ArticleList
-                                importantSize={12} mediumScreenSize={12} imagesHeight={'16rem'}
-                            />
-                        </Col>
-                    </Row>
-                </Container>
+                <Router />
 
                 {/*<Footer />*/}
             </div>

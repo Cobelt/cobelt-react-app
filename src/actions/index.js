@@ -4,3 +4,10 @@ export function selectArticle(article) {
     payload: article,
   };
 }
+
+export function changeRoute(route) {
+    return {
+        type: 'CHANGE_ROUTE',
+        payload: route,
+    };
+}

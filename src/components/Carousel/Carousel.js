@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 import {
-Carousel as BootstrapCarousel,
-CarouselItem,
-CarouselControl,
-CarouselIndicators,
-CarouselCaption
+    Carousel as BootstrapCarousel,
+    CarouselItem,
+    CarouselControl,
+    CarouselIndicators,
+    CarouselCaption
 } from 'reactstrap';
 
-import './Carousel.css';
+import '../../styles/Carousel.css';
 
 class Carousel extends Component {
     constructor(props) {

@@ -1,11 +1,19 @@
-$body-bg: azure;
+@import './variables.scss';
+
+.primary-color {
+  background-color: $primary-color;
+}
+
+.secondary-color {
+  background-color: $secondary-color;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 
-  background-color: $body-bg;
+  background-color: $body-bg !important;
 }
 
 .margin-top {

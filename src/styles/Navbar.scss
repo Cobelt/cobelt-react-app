@@ -1,21 +1,6 @@
-@font-face {
-  font-family: carefree;
-  src: local('carefree'), url(../../assets/font/carefree/carefree.woff) format('woff');
-  font-weight: bold;
-}
-@font-face {
-  font-family: disney;
-  src: local('disney'), url(../../assets/font/disney/Walt_Disney_Script.woff) format('woff');
-}
-
-$brand-font: disney;
-
-$navbar-bg: rgb(255, 108, 0);
-$dropdown-link-hover-bg: rgba(0, 0, 0, 0.2);
+@import './variables.scss';
 
 .navbar {
-  background-color: $navbar-bg;
-
   .navbar-brand {
     color: rgba(255, 255, 255, 0.8) !important;
     font-family: $brand-font, sans-serif;
@@ -31,11 +16,20 @@ $dropdown-link-hover-bg: rgba(0, 0, 0, 0.2);
   .nav-item {
 
     div.dropdown-menu {
-      background-color: $navbar-bg;
+      background-color: $primary-color;
 
       a:hover {
         background-color: $dropdown-link-hover-bg;
       }
+      a:active {
+        background-color: $dropdown-link-active-bg;
+        outline: none;
+      }
+      a:focus {
+        background-color: $dropdown-link-hover-bg;
+        outline: none;
+      }
+
     }
 
     a {

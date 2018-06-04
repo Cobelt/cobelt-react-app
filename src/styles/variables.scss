@@ -1,0 +1,23 @@
+$body-bg: #fff2f2;
+$brand-font: disney;
+
+
+
+$primary-color: rgb(255, 150, 32);
+$secondary-color: rgb(56, 191, 50);
+$tertiary-color: rgb(255, 104, 104);
+$quaternary-color: rgb(161, 44, 255);
+$quinary-color: rgb(255, 239, 79);
+
+$dropdown-link-hover-bg: rgba(0, 0, 0, 0.2);
+$dropdown-link-active-bg: rgba(0, 0, 0, 0.4);
+
+@font-face {
+  font-family: carefree;
+  src: local('carefree'), url(../assets/font/carefree/carefree.woff) format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: disney;
+  src: local('disney'), url(../assets/font/disney/Walt_Disney_Script.woff) format('woff');
+}
