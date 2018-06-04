@@ -1,27 +1,29 @@
-.selected {
-  filter: grayscale(1);
-}
-div:not(.selected) {
+.card.article-item {
+
+  .selected {
+    filter: grayscale(1);
+  }
+
+  .not-selected {
 
     filter: brightness(1);
     transition: filter .2s;
 
-    &.article-item:hover {
+    &:hover {
       cursor: pointer;
 
       filter: brightness(0.7);
       transition: filter .2s;
     }
 
-    &.article-item:active {
+    &:active {
 
       filter: brightness(0.5);
       transition: filter .2s;
     }
 
-}
+  }
 
-.card {
   .img-container {
     overflow: hidden;
 

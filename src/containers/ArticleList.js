@@ -26,8 +26,8 @@ class ArticleList extends Component {
             return (
                 <Col key={article.id + '/' + article.imgSrc} className="margin-bottom percent-5" sm={12}
                      md={article.isImportant ? this.state.importantSize : this.state.mediumScreenSize}>
-                    <div className={ false ? "selected" : ""} onClick={() => this.props.selectArticle(article)}>
-                        <Card className="article-item">
+                    <Card className="article-item">
+                        <div className={ article.id != 4 ? "not-selected" : "selected"} onClick={() => this.props.selectArticle(article)}>
                             <div className="img-container" style={{height: this.state.imagesHeight,}}>
                                 <CardImg top width="100%" src={article.imgSrc} alt="Card image cap"/>
                             </div>
@@ -37,8 +37,8 @@ class ArticleList extends Component {
                                     {article.desc}
                                 </CardText>
                             </CardBody>
-                        </Card>
-                    </div>
+                        </div>
+                    </Card>
                 </Col>
             );
         });
