@@ -1,3 +1,7 @@
+$transparent: rgba(10, 10, 10, 0);
+$control-hover: rgba(10, 10, 10, 0.4);
+$control-active: rgba(10, 10, 10, 0.8);
+
 .carousel {
   width: 100%;
 
@@ -15,5 +19,24 @@
 
   .fixed-span {
     color: white;
+  }
+
+  a[class^="carousel-control"] {
+    &:hover {
+      &[class*="-next"] {
+        background-image: linear-gradient(to right, $transparent, $control-hover);
+      }
+      &[class*="-prev"] {
+        background-image: linear-gradient(to left, $transparent, $control-hover);
+      }
+    }
+    &:active {
+      &[class*="-next"] {
+        background-image: linear-gradient(to right, $transparent, $control-active);
+      }
+      &[class*="-prev"] {
+        background-image: linear-gradient(to left, $transparent, $control-active);
+      }
+    }
   }
 }

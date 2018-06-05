@@ -3,7 +3,7 @@
 export default function(state = 'HOME', action) {
     switch (action.type) {
         case 'CHANGE_ROUTE':
-            return action.payload;
+            return action.route;
     }
     return state;
 }

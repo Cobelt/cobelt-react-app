@@ -5,6 +5,15 @@ import ArticleList from "../containers/ArticleList";
 import ArticleDetail from '../containers/ArticleDetail';
 
 export default class Article extends Component {
+    constructor (props) {
+        super(props);
+
+        this.state = {
+            articleImgHeight: '12rem',
+            listLength: 4,
+        }
+    }
+
     render() {
         return (
             <Container>
@@ -13,8 +22,9 @@ export default class Article extends Component {
                         <ArticleDetail baseId={4}/>
                     </Col>
                     <Col sm={12} md={3}>
-                        <ArticleList
-                            importantSize={12} mediumScreenSize={12} imagesHeight={'16rem'}
+                        <ArticleList importantSize={12} mediumScreenSize={12}
+                                     listLength={this.state.listLength}
+                                     imagesHeight={this.state.articleImgHeight}
                         />
                     </Col>
                 </Row>

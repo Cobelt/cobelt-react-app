@@ -1,11 +1,49 @@
 @import './variables.scss';
 
-.primary-color {
-  background-color: $primary-color;
-}
+.bg {
+  &.set-1 {
+    &.primary, &.primary .nav-item .dropdown-menu {
+      background-color: $primary-color;
+    }
+    &.secondary, &.secondary .nav-item .dropdown-menu {
+      background-color: $secondary-color;
+    }
+    &.tertiary, &.tertiary .nav-item .dropdown-menu {
+      background-color: $tertiary-color;
+    }
+    &.quaternary, &.quaternary .nav-item .dropdown-menu {
+      background-color: $quaternary-color;
+    }
+    &.quinary, &quaternary .nav-item .dropdown-menu {
+      background-color: $quinary-color;
+    }
+  }
+  &.set-2 {
+    &.primary, &.primary .nav-item .dropdown-menu {
+      background-color: $primary-color-1;
+    }
+    &.secondary, &.secondary .nav-item .dropdown-menu {
+      background-color: $secondary-color-1;
+    }
+    &.tertiary, &.tertiary .nav-item .dropdown-menu {
+      background-color: $tertiary-color-1;
+    }
+    &.quaternary, &.quaternary .nav-item .dropdown-menu {
+      background-color: $quaternary-color-1;
+    }
+    &.quinary, &quaternary .nav-item .dropdown-menu {
+      background-color: $quinary-color-1;
+    }
+  }
 
-.secondary-color {
-  background-color: $secondary-color;
+  &.animated-colors {
+    &.set-1>div {
+      animation: color_change_set1 1s infinite alternate;
+    }
+    &.set-2>div {
+      animation: color_change_set2 1s infinite alternate;
+    }
+  }
 }
 
 body {

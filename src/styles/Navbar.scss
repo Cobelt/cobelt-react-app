@@ -1,9 +1,19 @@
 @import './variables.scss';
 
+$nav-bg-color: rgba($primary-color, 0.7);
+$nav-bg-color-hovered: rgba($primary-color, 1);
+$nav-text-color: rgba(255, 255, 255, 0.7);
+$nav-text-color-hovered: rgba(255, 255, 255, 1);
+
 .navbar {
+
   .navbar-brand {
-    color: rgba(255, 255, 255, 0.8) !important;
-    font-family: $brand-font, sans-serif;
+
+    &:hover {
+      color: $nav-text-color-hovered;
+    }
+
+    font-family: $brand-font, $brand-font-secours, sans-serif;
     font-size: 250%;
 
     padding-top: 0;
@@ -13,34 +23,70 @@
     margin-bottom: -25%;
   }
 
+  a {
+    transition: color .2s;
+
+    &:hover {
+      transition: color .2s;
+      cursor: pointer;
+    }
+  }
+
   .nav-item {
 
     div.dropdown-menu {
-      background-color: $primary-color;
+      background-color: $nav-bg-color;
 
       a:hover {
-        background-color: $dropdown-link-hover-bg;
+        background-color: $link-hover-black-shade-bg;
       }
       a:active {
-        background-color: $dropdown-link-active-bg;
+        background-color: $link-active-black-shade-bg;
         outline: none;
       }
       a:focus {
-        background-color: $dropdown-link-hover-bg;
+        background-color: $link-hover-black-shade-bg;
         outline: none;
       }
 
     }
+  }
+
+  &:not(.inverted-color) {
+    color: $nav-text-color;
+
+    .nav-item div.dropdown-menu {
+      background-color: $nav-bg-color;
+    }
 
     a {
-      color: rgba(255, 255, 255, 0.7) !important;
+      color: $nav-text-color !important;
 
       &:hover {
-        cursor: pointer;
-        color: rgba(255, 255, 255, 1) !important;
+        color: $nav-text-color-hovered !important;
       }
     }
 
   }
+
+  &.inverted-color {
+    color: $nav-bg-color;
+
+    .nav-item div.dropdown-menu {
+      background-color: $nav-text-color;
+    }
+
+    a {
+      color: $nav-bg-color !important;
+
+      &:hover {
+        cursor: pointer;
+        color: $nav-bg-color !important;
+      }
+    }
+
+  }
+
+
 }
 

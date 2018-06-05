@@ -5,9 +5,16 @@ export function selectArticle(article) {
   };
 }
 
+export function selectQuantityArticles(quantity) {
+    return {
+        type: 'QUANTITY_SELECTED',
+        quantity: quantity,
+    };
+}
+
 export function changeRoute(route) {
     return {
         type: 'CHANGE_ROUTE',
-        payload: route,
+        route: route,
     };
 }

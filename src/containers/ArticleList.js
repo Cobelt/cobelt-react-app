@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { changeRoute, selectArticle } from '../actions/index';
+import { changeRoute, selectArticle, selectQuantityArticles } from '../actions/index';
 
 import { Row, Col, Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
@@ -16,7 +16,10 @@ class ArticleList extends Component {
             importantSize: props.importantSize,
             mediumScreenSize: props.mediumScreenSize,
             imagesHeight: props.imagesHeight || '16rem',
+            listLength: props.listLength || 6,
         };
+
+        this.props.selectQuantityArticles(this.state.listLength);
     }
 
     onArticleClick(article) {
@@ -83,6 +86,7 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({
         changeRoute: changeRoute,
         selectArticle: selectArticle,
+        selectQuantityArticles: selectQuantityArticles,
     }, dispatch);
 }
 

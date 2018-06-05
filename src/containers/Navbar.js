@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from "react-redux";
 import {bindActionCreators} from 'redux';
 
-import { changeRoute } from "../actions";
+import {changeRoute} from "../actions";
 
 import { Collapse, Navbar as MaterializeNavBar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
@@ -61,7 +61,7 @@ class Navbar extends Component {
 
         return (
             <div>
-                <MaterializeNavBar className="primary-color" light expand="md">
+                <MaterializeNavBar className="bg set-1 quaternary" light expand="md">
                     <NavbarBrand onClick={ () => this.props.changeRoute('HOME') }>cobelt.fr</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
@@ -76,11 +76,18 @@ class Navbar extends Component {
     }
 }
 
+function mapStateToProps(state) {
+    return {
+        route: state.route,
+    };
+}
+
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
         changeRoute: changeRoute,
     }, dispatch);
 }
 
+
 // Pont connecte redux avec react
-export default connect(mapDispatchToProps)(Navbar);
+export default connect(mapStateToProps,mapDispatchToProps)(Navbar);

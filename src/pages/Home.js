@@ -15,6 +15,8 @@ export default class HomePage extends Component {
 
         this.state = {
             articleList: this.queryArticleList(),
+            articleImgHeight: '24rem',
+            listLength: 4,
         }
     }
 
@@ -42,8 +44,8 @@ export default class HomePage extends Component {
 
                     <ArticleList
                         importantSize={12} mediumScreenSize={6}
-                        articleList={this.state.articleList}
-                        imagesHeight={'32.5rem'}
+                        imagesHeight={this.state.articleImgHeight}
+                        listLength={this.state.listLength}
                         onArticleSelect={ selectedArticle => this.setState({selectedArticle}) }
                     />
                 </Container>
