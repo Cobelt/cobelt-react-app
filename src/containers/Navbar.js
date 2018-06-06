@@ -61,7 +61,7 @@ class Navbar extends Component {
 
         return (
             <div>
-                <MaterializeNavBar className="bg set-1 quaternary" light expand="md">
+                <MaterializeNavBar className="bg set-4 quinary" light expand="md">
                     <NavbarBrand onClick={ () => this.props.changeRoute('HOME') }>cobelt.fr</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>

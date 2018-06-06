@@ -1,6 +1,6 @@
 $transparent: rgba(10, 10, 10, 0);
-$control-hover: rgba(10, 10, 10, 0.4);
-$control-active: rgba(10, 10, 10, 0.8);
+$control-hover: rgba(10, 10, 10, 0.2);
+$control-active: rgba(10, 10, 10, 0.4);
 
 .carousel {
   width: 100%;
@@ -22,6 +22,7 @@ $control-active: rgba(10, 10, 10, 0.8);
   }
 
   a[class^="carousel-control"] {
+
     &:hover {
       &[class*="-next"] {
         background-image: linear-gradient(to right, $transparent, $control-hover);

@@ -2,46 +2,80 @@
 
 .bg {
   &.set-1 {
-    &.primary, &.primary .nav-item .dropdown-menu {
+    &.primary, &.primary .dropdown .dropdown-menu {
       background-color: $primary-color;
     }
-    &.secondary, &.secondary .nav-item .dropdown-menu {
+    &.secondary, &.secondary .dropdown .dropdown-menu {
       background-color: $secondary-color;
     }
-    &.tertiary, &.tertiary .nav-item .dropdown-menu {
+    &.tertiary, &.tertiary .dropdown .dropdown-menu {
       background-color: $tertiary-color;
     }
-    &.quaternary, &.quaternary .nav-item .dropdown-menu {
+    &.quaternary, &.quaternary .dropdown .dropdown-menu {
       background-color: $quaternary-color;
     }
-    &.quinary, &quaternary .nav-item .dropdown-menu {
+    &.quinary, &.quinary .dropdown .dropdown-menu {
       background-color: $quinary-color;
     }
   }
   &.set-2 {
-    &.primary, &.primary .nav-item .dropdown-menu {
+    &.primary, &.primary .dropdown .dropdown-menu {
       background-color: $primary-color-1;
     }
-    &.secondary, &.secondary .nav-item .dropdown-menu {
+    &.secondary, &.secondary .dropdown .dropdown-menu {
       background-color: $secondary-color-1;
     }
-    &.tertiary, &.tertiary .nav-item .dropdown-menu {
+    &.tertiary, &.tertiary .dropdown .dropdown-menu {
       background-color: $tertiary-color-1;
     }
-    &.quaternary, &.quaternary .nav-item .dropdown-menu {
+    &.quaternary, &.quaternary .dropdown .dropdown-menu {
       background-color: $quaternary-color-1;
     }
-    &.quinary, &quaternary .nav-item .dropdown-menu {
+    &.quinary, &.quinary .dropdown .dropdown-menu {
       background-color: $quinary-color-1;
+    }
+  }
+  &.set-3 {
+    &.primary, &.primary .dropdown .dropdown-menu {
+      background-color: $primary-color-2;
+    }
+    &.secondary, &.secondary .dropdown .dropdown-menu {
+      background-color: $secondary-color-2;
+    }
+    &.tertiary, &.tertiary .dropdown .dropdown-menu {
+      background-color: $tertiary-color-2;
+    }
+    &.quaternary, &.quaternary .dropdown .dropdown-menu {
+      background-color: $quaternary-color-2;
+    }
+    &.quinary, &.quinary .dropdown .dropdown-menu {
+      background-color: $quinary-color-2;
+    }
+  }
+  &.set-4 {
+    &.primary, &.primary .dropdown div.dropdown-menu {
+      background-color: $primary-color-3;
+    }
+    &.secondary, &.secondary .dropdown div.dropdown-menu {
+      background-color: $secondary-color-3;
+    }
+    &.tertiary, &.tertiary .dropdown div.dropdown-menu {
+      background-color: $tertiary-color-3;
+    }
+    &.quaternary, &.quaternary .dropdown div.dropdown-menu {
+      background-color: $quaternary-color-3;
+    }
+    &.quinary, &.quinary .dropdown div.dropdown-menu {
+      background-color: $quinary-color-3;
     }
   }
 
   &.animated-colors {
-    &.set-1>div {
-      animation: color_change_set1 1s infinite alternate;
+    &.set-1 {
+      animation: color_change_set1 1s infinite alternate !important;
     }
-    &.set-2>div {
-      animation: color_change_set2 1s infinite alternate;
+    &.set-2 {
+      animation: color_change_set2 1s infinite alternate !important;
     }
   }
 }

@@ -1,7 +1,5 @@
 @import './variables.scss';
 
-$nav-bg-color: rgba($primary-color, 0.7);
-$nav-bg-color-hovered: rgba($primary-color, 1);
 $nav-text-color: rgba(255, 255, 255, 0.7);
 $nav-text-color-hovered: rgba(255, 255, 255, 1);
 
@@ -34,9 +32,7 @@ $nav-text-color-hovered: rgba(255, 255, 255, 1);
 
   .nav-item {
 
-    div.dropdown-menu {
-      background-color: $nav-bg-color;
-
+    .dropdown-menu {
       a:hover {
         background-color: $link-hover-black-shade-bg;
       }
@@ -54,39 +50,12 @@ $nav-text-color-hovered: rgba(255, 255, 255, 1);
 
   &:not(.inverted-color) {
     color: $nav-text-color;
-
-    .nav-item div.dropdown-menu {
-      background-color: $nav-bg-color;
-    }
-
     a {
       color: $nav-text-color !important;
-
       &:hover {
         color: $nav-text-color-hovered !important;
       }
     }
-
   }
-
-  &.inverted-color {
-    color: $nav-bg-color;
-
-    .nav-item div.dropdown-menu {
-      background-color: $nav-text-color;
-    }
-
-    a {
-      color: $nav-bg-color !important;
-
-      &:hover {
-        cursor: pointer;
-        color: $nav-bg-color !important;
-      }
-    }
-
-  }
-
-
 }
 
