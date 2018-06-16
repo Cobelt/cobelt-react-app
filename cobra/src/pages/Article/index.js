@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import ArticleList from "../containers/ArticleList";
-import ArticleDetail from '../containers/ArticleDetail';
+import ArticleList from "../../containers/Articles/List";
+import ArticleDetails from '../../containers/Articles/Details';
 
 export default class Article extends Component {
     constructor (props) {
@@ -19,7 +19,7 @@ export default class Article extends Component {
             <Container>
                 <Row className="margin-top percent-2">
                     <Col sm={12} md={9}>
-                        <ArticleDetail baseId={4}/>
+                        <ArticleDetails baseId={4}/>
                     </Col>
                     <Col sm={12} md={3}>
                         <ArticleList importantSize={12} mediumScreenSize={12}

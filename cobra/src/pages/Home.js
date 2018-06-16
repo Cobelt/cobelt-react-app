@@ -3,8 +3,8 @@ import { Component } from 'react';
 
 import { Container, Row, Col } from 'reactstrap';
 
-import Carousel from "../components/Carousel/Carousel";
-import ArticleList from "../containers/ArticleList";
+import Carousel from "../components/Carousel";
+import ArticleList from "../containers/Articles/List";
 
 import { articleList } from '../assets/fake_DB/articles';
 import { carouselSlides } from "../assets/fake_DB/carousel";

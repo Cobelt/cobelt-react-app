@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { changeRoute, selectArticle, selectQuantityArticles } from '../actions/index';
+import { changeRoute, selectArticle, selectQuantityArticles } from '../../../actions';
 
 import { Row, Col, Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
-import '../styles/Articles.css';
+import '../../../styles/Articles.css';
 
 class ArticleList extends Component {
     constructor(props) {

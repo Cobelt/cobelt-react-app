@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
-import '../styles/Articles.css';
+import '../../../styles/Articles.css';
 
-class ArticleDetail extends Component {
+class ArticleDetails extends Component {
     constructor(props) {
         super(props);
 
@@ -36,4 +36,4 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(ArticleDetail);
+export default connect(mapStateToProps)(ArticleDetails);

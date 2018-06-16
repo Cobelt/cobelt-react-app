@@ -1,10 +1,10 @@
 import React from 'react';
 
-import NavigationBar from "../../containers/Navbar";
+import Navbar from "../../containers/Navbar";
 
 const Header = () => {
     return (
-        <NavigationBar showNavItem={true}/>
+        <Navbar showNavItem={true}/>
     );
 };
 

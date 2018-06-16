@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import {connect} from "react-redux";
 import {bindActionCreators} from 'redux';
 
-import {changeRoute} from "../actions";
+import {changeRoute} from "../../actions";
 
 import { Collapse, Navbar as MaterializeNavBar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-import NavIcon from '../components/Utils/NavIcon/NavIcon';
-import Dropdown from "../components/Utils/Dropdown/Dropdown";
+import NavIcon from '../../components/Utils/NavIcon/NavIcon';
+import Dropdown from "../../components/Utils/Dropdown/Dropdown";
 
-import '../styles/Navbar.css';
-import {navDropdown, navIcons, navItems} from "../assets/fake_DB/navbar";
+import '../../styles/Navbar.css';
+import {navDropdown, navIcons, navItems} from "../../assets/fake_DB/navbar";
 
 class Navbar extends Component {
     constructor(props) {
