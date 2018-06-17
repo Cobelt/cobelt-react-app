@@ -3,13 +3,13 @@ import { Component } from 'react';
 
 import { Container, Row, Col } from 'reactstrap';
 
-import Carousel from "../components/Carousel";
-import ArticleList from "../containers/Articles/List";
+import Carousel from "../../components/Carousel";
+import ArticleList from "../../containers/Articles/List";
 
-import { articleList } from '../assets/fake_DB/articles';
-import { carouselSlides } from "../assets/fake_DB/carousel";
+import { articleList } from '../../assets/fake_DB/articles';
+import { carouselSlides } from "../../assets/fake_DB/carousel";
 
-export default class HomePage extends Component {
+export default class Home extends Component {
     constructor(props) {
         super(props);
 

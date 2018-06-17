@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import HomePage from "../pages/Home";
-import ArticlePage from "../pages/Article";
+import HomePage from "../../pages/Home";
+import ArticlePage from "../../pages/Article";
 
 class Router extends Component {
     constructor(props) {
@@ -21,7 +21,6 @@ class Router extends Component {
                     return <HomePage />;
                 case 'ARTICLE':
                     return <ArticlePage />;
-
 
                 default:
                     return 'HOME';
@@ -43,7 +42,4 @@ function mapStateToProps(state) {
     };
 }
 
-
-
-// Pont connecte redux avec react
 export default connect(mapStateToProps)(Router);

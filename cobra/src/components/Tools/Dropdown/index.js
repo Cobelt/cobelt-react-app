@@ -7,8 +7,6 @@ import {
     DropdownItem
 } from 'reactstrap';
 
-import './Dropdown.css';
-
 export default class Dropdown extends Component {
     constructor(props) {
         super(props);
