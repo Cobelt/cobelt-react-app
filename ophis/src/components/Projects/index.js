@@ -13,7 +13,7 @@ class ProjectsList extends Component {
     this.state = {
       importantSize: props.importantSize || 12,
       mediumScreenSize: props.mediumScreenSize || 6,
-      imagesHeight: props.imagesHeight || '32rem',
+      imagesHeight: props.imagesHeight || '20rem',
       projects: projectList,
     };
   }
