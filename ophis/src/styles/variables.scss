@@ -1,0 +1,64 @@
+$body-bg: rgb(255, 238, 213);
+$body-bg: #fafafa;
+$brand-font: umbrella;
+$brand-font-secours: disney;
+
+// Color set 1
+$primary-color: rgb(255, 150, 32);
+$secondary-color: rgb(56, 191, 50);
+$tertiary-color: rgb(255, 104, 104);
+$quaternary-color: rgb(161, 44, 255);
+$quinary-color: rgb(255, 239, 79);
+
+// Color set 2
+$primary-color-1: rgb(255, 148, 39);
+$secondary-color-1: rgb(255, 96, 40);
+$tertiary-color-1: rgb(255, 213, 116);
+$quaternary-color-1: rgb(115, 178, 232);
+$quinary-color-1: rgb(53, 228, 232);
+
+// Color set 3
+$primary-color-2: rgb(240, 197, 65);
+$secondary-color-2: rgb(240, 186, 19);
+$tertiary-color-2: rgb(67, 212, 179);
+$quaternary-color-2: rgb(197, 111, 204);
+$quinary-color-2: rgb(189, 68, 199);
+
+// Color set 4
+$primary-color-3: rgb(240, 178, 46);
+$secondary-color-3: rgb(163, 112, 2);
+$tertiary-color-3: rgb(255, 210, 114);
+$quaternary-color-3: rgb(0, 58, 163);
+$quinary-color-3: rgb(46, 115, 240);
+
+$link-hover-black-shade-bg: rgba(0, 0, 0, 0.2);
+$link-active-black-shade-bg: rgba(0, 0, 0, 0.4);
+
+@font-face {
+  font-family: carefree;
+  src: local('carefree'), url(../assets/font/carefree/carefree.woff) format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: disney;
+  src: local('disney'), url(../assets/font/disney/Walt_Disney_Script.woff) format('woff');
+}
+@font-face {
+  font-family: umbrella;
+  src: local('umrbella'), url(../assets/font/umbrella/umbrella.woff) format('woff');
+}
+
+@-webkit-keyframes color_change_set1 {
+  0%   { background-color: $primary-color !important ; }
+  25%  { background-color: $secondary-color !important ; }
+  50%  { background-color: $tertiary-color !important ; }
+  75%  { background-color: $quaternary-color !important ; }
+  100% { background-color: $quinary-color !important ; }
+}
+@-webkit-keyframes color_change_set2 {
+  0%   { background-color: $primary-color-1 !important ; }
+  25%  { background-color: $secondary-color-1 !important ; }
+  50%  { background-color: $tertiary-color-1 !important ; }
+  75%  { background-color: $quaternary-color-1 !important ; }
+  100% { background-color: $quinary-color-1 !important ; }
+}

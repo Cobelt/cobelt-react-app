@@ -1,0 +1,93 @@
+@import './variables.scss';
+
+.card {
+
+  &.project-item {
+
+    filter: brightness(1);
+    transition: filter .2s;
+
+    &:hover {
+      cursor: pointer;
+
+      filter: brightness(0.7);
+      transition: filter .2s;
+    }
+
+    &:active {
+
+      filter: brightness(0.5);
+      transition: filter .2s;
+    }
+
+  }
+
+  .img-container {
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: auto !important;
+
+      min-width: 100%;
+      max-width: 100%;
+
+      min-height: 100%;
+      max-height: 100%;
+    }
+  }
+
+  p.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+
+  .no-decorations-link {
+    color: $quaternary-color-1;
+  }
+
+  &:link .no-decorations-link, &:visited .no-decorations-link {
+    text-decoration: none;
+    color: $quaternary-color-1;
+  }
+  &:hover .no-decorations-link, &:active .no-decorations-link {
+    text-decoration: none;
+    color: darken($quaternary-color-1, 30);
+  }
+
+
+  &.show-something-over-on-hover {
+
+    position:relative;
+
+    .something-to-show {
+
+      position: absolute;
+      top: calc(50% - 1rem);
+      left: 0;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+
+      .sub-item {
+
+        visibility: hidden;
+        opacity: 0;
+
+        transition: visibility 0s, opacity 0.2s linear;
+
+        font-size: 3rem;
+        color: lighten($quaternary-color-1, 30);
+      }
+    }
+    &:hover .something-to-show {
+      .sub-item {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+  }
+}

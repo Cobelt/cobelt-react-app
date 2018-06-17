@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+$nav-text-color: rgba(255, 255, 255, 0.7);
+$nav-text-color-hovered: rgba(255, 255, 255, 1);
+
+.navbar {
+
+  .navbar-brand {
+
+    &:hover {
+      color: $nav-text-color-hovered;
+    }
+
+    font-family: $brand-font, $brand-font-secours, sans-serif;
+    font-size: 250%;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    margin-top: -25%;
+    margin-bottom: -25%;
+  }
+
+  a {
+    transition: color .2s;
+
+    &:hover {
+      transition: color .2s;
+      cursor: pointer;
+    }
+  }
+
+  .nav-item {
+
+    .dropdown-menu {
+      a:hover {
+        background-color: $link-hover-black-shade-bg;
+      }
+      a:active {
+        background-color: $link-active-black-shade-bg;
+        outline: none;
+      }
+      a:focus {
+        background-color: $link-hover-black-shade-bg;
+        outline: none;
+      }
+
+    }
+  }
+
+  &:not(.inverted-color) {
+    color: $nav-text-color;
+    a {
+      color: $nav-text-color !important;
+      &:hover {
+        color: $nav-text-color-hovered !important;
+      }
+    }
+  }
+}
+

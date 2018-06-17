@@ -1,28 +1,101 @@
-.App {
-  text-align: center;
+@import './variables.scss';
+
+.bg {
+  &.set-1 {
+    &.primary, &.primary .dropdown .dropdown-menu {
+      background-color: $primary-color;
+    }
+    &.secondary, &.secondary .dropdown .dropdown-menu {
+      background-color: $secondary-color;
+    }
+    &.tertiary, &.tertiary .dropdown .dropdown-menu {
+      background-color: $tertiary-color;
+    }
+    &.quaternary, &.quaternary .dropdown .dropdown-menu {
+      background-color: $quaternary-color;
+    }
+    &.quinary, &.quinary .dropdown .dropdown-menu {
+      background-color: $quinary-color;
+    }
+  }
+  &.set-2 {
+    &.primary, &.primary .dropdown .dropdown-menu {
+      background-color: $primary-color-1;
+    }
+    &.secondary, &.secondary .dropdown .dropdown-menu {
+      background-color: $secondary-color-1;
+    }
+    &.tertiary, &.tertiary .dropdown .dropdown-menu {
+      background-color: $tertiary-color-1;
+    }
+    &.quaternary, &.quaternary .dropdown .dropdown-menu {
+      background-color: $quaternary-color-1;
+    }
+    &.quinary, &.quinary .dropdown .dropdown-menu {
+      background-color: $quinary-color-1;
+    }
+  }
+  &.set-3 {
+    &.primary, &.primary .dropdown .dropdown-menu {
+      background-color: $primary-color-2;
+    }
+    &.secondary, &.secondary .dropdown .dropdown-menu {
+      background-color: $secondary-color-2;
+    }
+    &.tertiary, &.tertiary .dropdown .dropdown-menu {
+      background-color: $tertiary-color-2;
+    }
+    &.quaternary, &.quaternary .dropdown .dropdown-menu {
+      background-color: $quaternary-color-2;
+    }
+    &.quinary, &.quinary .dropdown .dropdown-menu {
+      background-color: $quinary-color-2;
+    }
+  }
+  &.set-4 {
+    &.primary, &.primary .dropdown div.dropdown-menu {
+      background-color: $primary-color-3;
+    }
+    &.secondary, &.secondary .dropdown div.dropdown-menu {
+      background-color: $secondary-color-3;
+    }
+    &.tertiary, &.tertiary .dropdown div.dropdown-menu {
+      background-color: $tertiary-color-3;
+    }
+    &.quaternary, &.quaternary .dropdown div.dropdown-menu {
+      background-color: $quaternary-color-3;
+    }
+    &.quinary, &.quinary .dropdown div.dropdown-menu {
+      background-color: $quinary-color-3;
+    }
+  }
+
+  &.animated-colors {
+    &.set-1 {
+      animation: color_change_set1 1s infinite alternate !important;
+    }
+    &.set-2 {
+      animation: color_change_set2 1s infinite alternate !important;
+    }
+  }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  background-color: $body-bg !important;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.margin-top {
+  &.percent-2 {
+    margin-top: 2%;
+  }
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.margin-bottom {
+  &.percent-5 {
+    margin-bottom: 5%;
+  }
 }
