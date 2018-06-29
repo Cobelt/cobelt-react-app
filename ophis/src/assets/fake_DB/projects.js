@@ -11,6 +11,15 @@ export const projectList = [
     route: 'http://cobelt.fr',
   },
   {
+      id: 5,
+      title: 'Mue',
+      body: 'Some quick example text to build on the card title and make up the bulk of the card\'s content. Article 6',
+      desc: 'Framework CSS, done in Stylus',
+      imgSrc: img.mue,
+      isImportant: true,
+      route: 'http://mue.cobelt.fr',
+  },
+  {
     id: 1,
     title: 'Boa',
     body: 'Some quick example text to build on the card title and make up the bulk of the card\'s content. Article 4',
@@ -29,7 +38,7 @@ export const projectList = [
   {
     id: 3,
     title: 'Vipere',
-    body: 'Some quick example text to build on the card title and make up the bulk of thecard\'s content. Article 1',
+    body: 'Some quick example text to build on the card title and make up the bulk of thecard\'s content. Article 2',
     desc: 'GraphQL client',
     imgSrc: img.vipere,
     isImportant: true,
@@ -38,7 +47,7 @@ export const projectList = [
   {
     id: 4,
     title: 'Terrarium',
-    body: 'Some quick example text to build on the card title and make up the bulk of thecard\'s content. Article 2',
+    body: 'Some quick example text to build on the card title and make up the bulk of thecard\'s content. Article 1',
     desc: 'Database',
     imgSrc: img.terrarium,
     isImportant: true,
