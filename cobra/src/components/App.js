@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 
-import Header from './Header/index';
+import Navbar from '../containers/Navbar';
 import Router from "../containers/Router";
 // footer import
+
+import { Grid } from 'muejs';
+
 
 import '../styles/App.css';
 
 export default class App extends Component {
     render() {
         return (
-            <div>
-                <Header />
+            <Grid>
+                <Navbar />
 
                 <Router />
 
                 {/*<Footer />*/}
-            </div>
+            </Grid>
         );
     }
 }
