@@ -1,4 +1,13 @@
 {
+  "name": "Cobra",
+  "version": "0.0.2",
+  "description": "Cobelt.fr as Cobelt-React-App Website.",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cobelt/Reptiles.git"
+  },
+
   "dependencies": {
     "bootstrap": "^4.1.1",
     "muejs": "^1.0.0",
@@ -22,12 +31,5 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "name": "Cobra",
-  "version": "0.0.1",
-  "description": "Cobelt.fr as Cobelt-React-App Website.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Cobelt/Reptiles.git"
   }
 }
